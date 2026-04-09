@@ -16,27 +16,27 @@ console.log('instance of car2:', car2 );
 console.log('instance of car3:', car3 );
 console.log('instance of car4:', car4 );
 // Display car information in the HTML
-document.getElementById("car1").innerHTML = `Car 1: ${car1.make} ${car1.model} (${car1.year})`;
-document.getElementById("car2").innerHTML = `Car 2: ${car2.make} ${car2.model} (${car2.year})`;
-document.getElementById("car3").innerHTML = `Car 3: ${car3.make} ${car3.model} (${car3.year})`;
-document.getElementById("car4").innerHTML = `Car 4: ${car4.make} ${car4.model} (${car4.year})`;
+// document.getElementById("car1").innerHTML = `Car 1: ${car1.make} ${car1.model} (${car1.year})`;
+// document.getElementById("car2").innerHTML = `Car 2: ${car2.make} ${car2.model} (${car2.year})`;
+// document.getElementById("car3").innerHTML = `Car 3: ${car3.make} ${car3.model} (${car3.year})`;
+// document.getElementById("car4").innerHTML = `Car 4: ${car4.make} ${car4.model} (${car4.year})`;
 
 // function to check if an object is an instance of Car
 function  isCar(object) {
     if (object instanceof Car) {
         return true;
     }    return false;
-    console.log('object is not an instance of Car');
+    
 }
 console.log('is car1 a Car?', isCar(car1));
 console.log('is car2 a Car?', isCar(car2));
 console.log('is car3 a Car?', isCar(car3));
 console.log('is car4 a Car?', isCar(car4));
 // Display car type information in the HTML
-document.getElementById("car1-type").innerHTML = `Is car1 a Car? ${isCar(car1)}`;
-document.getElementById("car2-type").innerHTML = `Is car2 a Car? ${isCar(car2)}`;
-document.getElementById("car3-type").innerHTML = `Is car3 a Car? ${isCar(car3)}`;
-document.getElementById("car4-type").innerHTML = `Is car4 a Car? ${isCar(car4)}`;
+// document.getElementById("car1-type").innerHTML = `Is car1 a Car? ${isCar(car1)}`;
+// document.getElementById("car2-type").innerHTML = `Is car2 a Car? ${isCar(car2)}`;
+// document.getElementById("car3-type").innerHTML = `Is car3 a Car? ${isCar(car3)}`;
+// document.getElementById("car4-type").innerHTML = `Is car4 a Car? ${isCar(car4)}`;
 
 
 
@@ -47,8 +47,8 @@ my_Object = { name: "Alice", age: 30, city: "New York" };
 console.log('my_Array:', my_Array);
 console.log('my_Object:', my_Object);
 // Display array and object information in the HTML
-document.getElementById("array").innerHTML = `Array: ${my_Array}`;
-document.getElementById("object").innerHTML = `Object: ${JSON.stringify(my_Object)}`;
+// document.getElementById("array").innerHTML = `Array: ${my_Array}`;
+// document.getElementById("object").innerHTML = `Object: ${JSON.stringify(my_Object)}`;
 
 // control flow statements
 let age = 17;
@@ -58,18 +58,22 @@ if(age >= 18){
     console.log('You are a minor.');
 }
 // Display age message in the HTML
-document.getElementById("age-message").innerHTML = age >= 18 ? "You are an adult." : "You are a minor.";
+// document.getElementById("age-message").innerHTML = age >= 18 ? "You are an adult." : "You are a minor.";
 
 // control flow statements with multiple conditions
 let time  = 12;
 if(time < 12){
-    document.getElementById("time-message").innerHTML = "Good morning!";
+    // document.getElementById("time-message").innerHTML = "Good morning!";
+    console.log("Good morning!");
+
 }
 else if(time < 18){
-    document.getElementById("time-message").innerHTML = "Good afternoon!";
+    // document.getElementById("time-message").innerHTML = "Good afternoon!";
+    console.log("Good afternoon!");
 }
 else{
-    document.getElementById("time-message").innerHTML = "Good evening!";
+    // document.getElementById("time-message").innerHTML = "Good evening!";
+    console.log("Good evening!");
 }
 
 
@@ -79,19 +83,18 @@ const temperature = 45;
 const isRaining = true;
 if(temperature > 30){
     if(isRaining){
-        document.getElementById("weather-message").innerHTML = "It's hot and raining. Stay safe!";
+        // document.getElementById("weather-message").innerHTML = "It's hot and raining. Stay safe!";
         console.log("It's hot and raining. Stay safe!");
     } else {
-        document.getElementById("weather-message").innerHTML = "It's hot but not rainy. Enjoy your sunshine!";
+        // document.getElementById("weather-message").innerHTML = "It's hot but not rainy. Enjoy your sunshine!";
         console.log("It's hot but not rainy. Enjoy your sunshine!");
     }
 }else{
     if(isRaining){
-        document.getElementById("weather-message").innerHTML = "It's not hot but raining. Take your umbrella!";
+        // document.getElementById("weather-message").innerHTML = "It's not hot but raining. Take your umbrella!";
         console.log("It's not hot but raining. Take your umbrella!");
     }else{
-        document.getElementById("weather-message").innerHTML = "It's not hot and not raining. Have a nice day!";
-
+        // document.getElementById("weather-message").innerHTML = "It's not hot and not raining. Have a nice day!";
         console.log("It's not hot and not raining. Have a nice day!");
     }
 }
@@ -100,29 +103,36 @@ if(temperature > 30){
 // Switch statement
 const day = "Friday";
 switch(day){
-    case "Monday": 
-        document.getElementById("day-message").innerHTML = "It's Monday!";
+    case "Monday":
+        console.log("It's Monday!"); 
+        // document.getElementById("day-message").innerHTML = "It's Monday!";
         break;
     case "Tuesday":
-        document.getElementById("day-message").innerHTML = "It's Tuesday!";
+        console.log("It's Tuesday!");
+        // document.getElementById("day-message").innerHTML = "It's Tuesday!";
         break;
     case "Wednesday":
-        document.getElementById("day-message").innerHTML = "It's Wednesday!";
+        console.log("It's Wednesday!");
+        // document.getElementById("day-message").innerHTML = "It's Wednesday!";
         break;
         case "Thursday":
-        document.getElementById("day-message").innerHTML = "It's Thursday!";
+        console.log("It's Thursday!");
+        // document.getElementById("day-message").innerHTML = "It's Thursday!";
         break;
     case "Friday":
-        document.getElementById("day-message").innerHTML = "It's Friday!";
+        console.log("It's Friday!");
+        // document.getElementById("day-message").innerHTML = "It's Friday!";
         break;
     case "Saturday":
-        document.getElementById("day-message").innerHTML = "It's Saturday!";
+        console.log("It's Saturday!");
+        // document.getElementById("day-message").innerHTML = "It's Saturday!";
         break;
         case "Sunday":
-        document.getElementById("day-message").innerHTML = "It's Sunday!";
+        console.log("It's Sunday!");
+        // document.getElementById("day-message").innerHTML = "It's Sunday!";
         break;
     default:
-        document.getElementById("day-message").innerHTML = "It's some other day!";
+        console.log("It's some other day!");
 }
 
 
@@ -133,7 +143,7 @@ switch(day){
 for(let i = 1; i <= 5; i++){
     console.log(`For loop iteration: ${i}`);
     console.log(`For loop iteration: ${i}`);
-    document.getElementById("for-loop").innerHTML += `For loop iteration: ${i}<br>`;
+    // document.getElementById("for-loop").innerHTML += `For loop iteration: ${i}<br>`;
 }
 
 // while loop
@@ -143,7 +153,7 @@ let a= 0;
 let b = 1;
 while(a <= limit){
     console.log(`While loop value: ${a}`);
-    document.getElementById("while-loop").innerHTML += `While loop value: ${a}<br>`;
+    // document.getElementById("while-loop").innerHTML += `While loop value: ${a}<br>`;
     let temp = a+b;
     a = b;
     b = temp;
@@ -154,13 +164,34 @@ let roll = 0;
 do{
     console.log(`Do-while loop roll:`+  roll);
     roll++;
-    document.getElementById("do-while-loop").innerHTML += `Do-while loop roll: ${roll}<br>`;
+    // document.getElementById("do-while-loop").innerHTML += `Do-while loop roll: ${roll}<br>`;
 } while(roll <= 7);
 
 
 // for...of loop
 const fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
 for(const fruit of fruits){
-    console.log(`For...of loop fruit: ${fruit}`);
-    document.getElementById("for-of-loop").innerHTML += `For...of loop fruit: ${fruit}<br>`;
+    console.log(`For...of loop fruit: `+fruit);
+    // document.getElementById("for-of-loop").innerHTML += `For...of loop fruit: ${fruit}<br>`;
 }
+
+
+
+// NON-PARAMETERIZED FUNCTION 
+
+function add(){
+
+    return a + b ;
+}
+
+console.log(`The sum of a and b is:`+ add(3, 4));
+
+// document.getElementById("add-function1").innerHTML = `The sum of ${a} and ${b} is: ${add(a, b)}`
+
+
+// PARAMETERIZED FUNCTIONS
+function add(c, d){
+    return c + d;
+}
+console.log(`The sum of 5 and 7 is:`+add(5, 7));
+// document.getElementById("add-function2").innerHTML = `The sum of 5 and 7 is: ${add(5, 7)}`;
